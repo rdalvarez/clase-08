@@ -16,7 +16,7 @@ function Ingresar(){
 		}
 	})
 	.then(function bien(respuesta){
-		alert(respuesta);
+		$("#test").html(respuesta);
 	}
 	,function error(jqXHR, textStatus, errorThrown) {
         console.log("ERROR: "+jqXHR.responseText + "\n" + textStatus + "\n" + errorThrown);

@@ -8,13 +8,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-	<div id="frmIngreso" class="widget clearfix">
-		<input type="text" id="user" placeholder="User">
-		<br>
-		<input tpye="text" id="pass" placeholder="Pass">
-		<br>
-		<input type="button" onclick="Ingresar()" value="Ingresar" class="btn">
-	</div>
-	<div id="test"></div>
+	<table>
+		<tr>
+			<td>
+				<div id="frmIngreso" class="widget clearfix">
+					<h2 class="form-ingreso-heading">Ingrese sus datos</h2>
+					<input type="text" id="user" placeholder="User" class="form-control" value="<?php if(isset($_COOKIE["registro"])){ echo $_COOKIE["registro"];} ?>"/>
+					<input tpye="password" id="pass" placeholder="Pass" class="form-control"/>		
+					<input type="button" onclick="Ingresar()" value="Ingresar" class="btn">
+					<div id="test"></div>
+				</div>
+				
+			</td>
+		</tr>
+	</table>
+
+	
 </body>
 </html>
