@@ -15,7 +15,4 @@ else{
 	var_dump($_SESSION);
 	$_SESSION['perfil'] = "ADMIN";
 }
-// aca iria el switch
-
-
  ?>

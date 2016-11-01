@@ -23,3 +23,7 @@ function Ingresar(){
     });
 
 }
+
+function Desloguear(){
+	
+}
